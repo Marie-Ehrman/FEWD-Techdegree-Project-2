@@ -1,0 +1,368 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    color: darkslategray;
+
+}
+
+body {
+    text-align: center;
+    
+}
+
+header {
+    text-align: center;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 15px;
+
+}
+
+a {
+    font-weight: bold;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.header-nav li{
+	text-align: center;
+	background: #fff;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+
+.header-nav a {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 10px 15px;
+	text-align: center;
+	display: block;
+}
+
+
+.intro-div {
+    margin: 30px 0 0 0;
+}
+
+
+.intro-div img {
+    width: 80%;
+}
+
+.section-title {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 30px 0 0 0;
+}
+
+article {
+    margin: 30px 0;
+}
+.article-title {
+    font-size: 1.25em;
+}
+
+article p {
+    width: 85%;
+    margin: 0 auto;
+}
+
+article img {
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.portfolio-section {
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    background-color: #fafafa;
+    padding: 1px 15px 40px 15px;
+}
+
+.page-break {
+    border-bottom: solid lightgray  2px;
+    margin-bottom: 15px;
+
+}
+
+footer {
+    background-color: #fafafa;
+    padding: 0 15px 15px 15px;    
+
+}
+
+.footer-title {
+    float: left;
+    font-size: 1em;
+    margin: 0;
+}
+
+footer .home-link,
+        .portfolio-link,
+        .contact-link {
+    display: none;
+}
+
+footer .back-to-top {
+    float: right;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/*********** 
+TABLET MEDIA BREAKPOINT 
+***********/
+@media(min-width: 768px){
+
+    header {
+        text-align: center;
+        background-color: #fafafa;
+        width: 100%;
+        padding: 15px;
+        display: inline-block;
+    
+    }
+    
+    a {
+        font-weight: bold;
+    }
+    
+    .name {
+        font-weight: bold;
+        float: left;
+    }
+    
+    header nav {
+        float: right;
+
+    }
+
+
+    .header-nav li{
+        float: left;
+    }
+    
+    .header-nav a,
+    .footer-nav a {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        text-align: center;
+        display: block;
+    }
+    
+    
+    .intro-div {
+        margin: 30px 0 0 0;
+        float: left;
+    }
+    
+    
+    .intro-div img {
+        width: 50%;
+        float: right;
+    }
+    
+    .section-title {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 15px;
+        margin: 30px 0 0 0;
+    }
+    
+    article {
+        margin: 30px 0;
+    }
+    .article-title {
+        font-size: 1.25em;
+    }
+    
+    article p {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    article img {
+    
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .portfolio-section {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-section {
+        background-color: #fafafa;
+        padding: 1px 15px 40px 15px;
+    }
+    
+    .page-break {
+        border-bottom: solid lightgray  2px;
+        margin-bottom: 15px;
+    
+    }
+    
+    footer {
+        background-color: #fafafa;
+        padding: 0 15px 15px 15px; 
+        display: inline-block;   
+    
+    }
+    
+    .footer-title {
+        float: left;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .footer-nav {
+        float: right;
+    }
+
+    .footer-nav li {
+        float: right;
+    }
+
+    .back-to-top {
+        display: none;
+    }
+
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+
+}
+
+
+/*********** 
+DESKTOP MEDIA BREAKPOINT 
+***********/
+
+@media(min-width: 1024px){
+
+    header {
+        text-align: center;
+        background-color: #fafafa;
+        width: 100%;
+        padding: 15px;
+    
+    }
+    
+    a {
+        font-weight: bold;
+    }
+    
+    .name {
+        font-weight: bold;
+    }
+    
+    .header-nav li{
+        text-align: center;
+        background: #fff;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+    
+    .header-nav a {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        text-align: center;
+        display: block;
+    }
+    
+    
+    .intro-div {
+        margin: 30px 0 0 0;
+    }
+    
+    
+    .intro-div img {
+        width: 80%;
+    }
+    
+    .section-title {
+        font-size: 1em;
+        text-transform: uppercase;
+        padding: 15px;
+        margin: 30px 0 0 0;
+    }
+    
+    article {
+        margin: 30px 0;
+    }
+    .article-title {
+        font-size: 1.25em;
+    }
+    
+    article p {
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    article img {
+    
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .portfolio-section {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-section {
+        background-color: #fafafa;
+        padding: 1px 15px 40px 15px;
+    }
+    
+    .page-break {
+        border-bottom: solid lightgray  2px;
+        margin-bottom: 15px;
+    
+    }
+    
+    footer {
+        background-color: #fafafa;
+        padding: 0 15px 15px 15px;    
+    
+    }
+    
+    .footer-title {
+        float: left;
+        font-size: 1em;
+        margin: 0;
+    }
+    
+    .home-link,
+    .portfolio-link,
+    .contact-link {
+        float: right;
+    }
+
+   .back-to-top {
+        display: none;
+    }
+    
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+}
+
