@@ -12,10 +12,9 @@ body {
 
 
 /********************** 
-MOBILE MEDIA BREAKPOINT 
+MOBILE
 **********************/
 
-@media (max-width: 767px){
     header {
         text-align: center;
         background-color: #fafafa;
@@ -92,6 +91,12 @@ MOBILE MEDIA BREAKPOINT
         padding: 1px 15px 40px 15px;
     }
 
+    .phone,
+    .email {
+        font-weight: bold;
+        padding: 0 5px;
+    }
+    
     .page-break {
         border-bottom: solid lightgray  2px;
         margin-bottom: 15px;
@@ -120,45 +125,22 @@ MOBILE MEDIA BREAKPOINT
         float: right;
     }
 
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
 
-}
-
+    
 /********************** 
 TABLET MEDIA BREAKPOINT 
 ***************(*******/
 @media(min-width: 768px){
 
-    body {
-        background-color: #fafafa;
-    }
-
-
-    header {
-        text-align: center;
-        width: 100%;
-        padding: 30px;
-        display: inline-block;
-    
-    }
-    
-    a {
-        font-weight: bold;
-    }
-    
-    .name,
-    .footer-title {
-        margin: 0;
-        font-weight: bold;
-        float: left;
-    }
-    
-    header nav {
-        float: right;
-
-    }
-
     .header-nav li{
         float: left;
+        background: #fafafa;
+
     }
     
     .header-nav a,
@@ -169,13 +151,16 @@ TABLET MEDIA BREAKPOINT
         display: block;
     }
     
-    
+    header nav {
+        display: inline-block;
+    }
+
     .intro-div {
         margin: 30px 0 0 0;
         float: left;
     }
     
-    .intro-div p{
+    .intro-div p {
         text-align: left;
         width: 50%;
         padding-right: 15px;
@@ -187,20 +172,10 @@ TABLET MEDIA BREAKPOINT
         float: right;
     }
     
-    .section-title {
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 15px;
-        margin: 30px 0 0 0;
-    }
-    
     article {
         margin: 20px 0;
         float: left;
-        width: 33%;
-    }
-    .article-title {
-        font-size: 1.25em;
+        width: 48%;
     }
     
     article p {
@@ -210,37 +185,30 @@ TABLET MEDIA BREAKPOINT
     }
     
     article img {
-        width: 95%;
-        margin: 0 auto;
+        width: 97%;
     }
     
     .portfolio-section {
-        width: 95%;
+        width: 97%;
         background-color: #ffffff;
-        padding: 5px;
+        padding: 1px;
         margin: 0 auto;
     }
-    
-    .contact-section {
-        padding: 1px 15px 40px 15px;
-    }
-    
+
     .contact-section p {
         width: 60%;
         margin: 20px auto;
     }
-
-    .page-break {
-        border-bottom: solid lightgray  2px;
-        margin-bottom: 15px;
-    
-    }
     
     footer {
-        background-color: #fafafa;
         padding: 0 30px 15px 30px;
+    }
 
-    
+    .footer-title {
+        margin: 0;
+        padding: 10px 15px;
+        font-weight: bold;
+        float: left;
     }
     
     .footer-nav {
@@ -250,6 +218,12 @@ TABLET MEDIA BREAKPOINT
 
     .footer-nav li {
         float: left;
+    }
+
+    footer .home-link,
+    .portfolio-link,
+    .contact-link {
+        display: block;
     }
 
     .back-to-top {
@@ -264,12 +238,10 @@ DESKTOP MEDIA BREAKPOINT
 ***********************/
 
 @media(min-width: 1024px){
-
-
+    
     body {
         background-color: #fafafa;
     }
-
 
     header {
         text-align: center;
@@ -278,9 +250,9 @@ DESKTOP MEDIA BREAKPOINT
         display: inline-block;
     
     }
-    
-    a {
-        font-weight: bold;
+
+    header nav {
+        float: right;
     }
     
     .name,
@@ -290,54 +262,20 @@ DESKTOP MEDIA BREAKPOINT
         float: left;
     }
     
-    header nav {
-        float: right;
-
-    }
-
-    .header-nav li{
-        float: left;
-    }
-    
-    .header-nav a,
-    .footer-nav a {
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 10px 15px;
-        display: block;
-    }
-    
-    
-    .intro-div {
-        margin: 30px 0 0 0;
-        float: left;
-    }
-    
     .intro-div p{
-        text-align: left;
         font-size: 1.5em;
         width: 60%;
-        padding-right: 15px;
-        margin: 0;
+
     }
 
     .intro-div img {
         width: 40%;
-        float: right;
-    }
-    
-    .section-title {
-        font-size: 1em;
-        text-transform: uppercase;
-        padding: 15px;
-        margin: 30px 0 0 0;
     }
     
     article {
-        margin: 20px 1px;
-        float: left;
         width: 33%;
     }
+
     .article-title {
         font-size: 1.25em;
     }
@@ -345,7 +283,6 @@ DESKTOP MEDIA BREAKPOINT
     article p {
         font-size: 1em;
         width: 90%;
-        margin: 0 auto;
     }
     
     article img {
@@ -368,24 +305,6 @@ DESKTOP MEDIA BREAKPOINT
         width: 60%;
         margin: 20px auto;
     }
-
-    .phone,
-    .email {
-        font-weight: bold;
-        padding: 0 5px;
-    }
-
-    .page-break {
-        border-bottom: solid lightgray  2px;
-        margin-bottom: 15px;
-    
-    }
-    
-    footer {
-        background-color: #fafafa;
-        padding: 0 30px 15px 30px;
-
-    }
     
     .footer-nav {
         float: right;
@@ -400,10 +319,4 @@ DESKTOP MEDIA BREAKPOINT
         display: none;
     }
 
-}
-
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
 }
