@@ -12,12 +12,12 @@ body {
 
 
 /********************** 
-MOBILE FORWARD
+MOBILE FIRST
 **********************/
 
     header {
         text-align: center;
-        background-color: #fafafa;
+        background-color: #e4fef7;
         width: 100%;
         padding: 15px;
 
@@ -29,6 +29,7 @@ MOBILE FORWARD
 
     .name {
         font-weight: bold;
+        color: silver;
     }
 
     .header-nav li{
@@ -60,6 +61,7 @@ MOBILE FORWARD
     }
 
     .section-title {
+        font-family: 'Poppins', sans-serif;
         font-size: 1em;
         text-transform: uppercase;
         padding: 15px;
@@ -72,6 +74,8 @@ MOBILE FORWARD
 
     .article-title {
         font-size: 1.25em;
+        width: 90%;
+        margin: 10px auto;
     }
 
     article p {
@@ -85,12 +89,22 @@ MOBILE FORWARD
     }
 
     .portfolio-section {
+        background-color: #faf0ff;
         padding: 5px;
-        margin-bottom: 20px;
+    }
+
+    .projects-section {
+        background-color: #e9fcec;
+        padding: 5px 5px 20px;
+    }
+
+
+    article img:hover {
+        transform: scale(1.1);
     }
 
     .contact-section {
-        background-color: #fafafa;
+        background-color: #e4fef7;
         padding: 1px 15px 40px 15px;
     }
 
@@ -106,7 +120,7 @@ MOBILE FORWARD
     }
 
     footer {
-        background-color: #fafafa;
+        background-color: #e4fef7;
         padding: 0 15px 15px 15px;    
     }
 
@@ -119,6 +133,7 @@ MOBILE FORWARD
 
     footer .home-link,
             .portfolio-link,
+            .projects-section,
             .contact-link {
         display: none;
     }
@@ -150,7 +165,8 @@ TABLET MEDIA BREAKPOINT
 
     .header-nav li{
         float: left;
-        background: #fafafa;
+        background: #e4fef7;
+        padding: 5px;
     }
     
     header nav {
@@ -189,11 +205,14 @@ TABLET MEDIA BREAKPOINT
     
     .portfolio-section {
         width: 100%;
-        background-color: #ffffff;
+        background-color: #faf0ff;
         padding: 0 25px;
-        margin: 0 0 20px 0;
         display: inline-block;
 
+    }
+
+    .projects-section {
+        padding: 5px 25px 25px;
     }
 
     .contact-section p {
@@ -223,6 +242,7 @@ TABLET MEDIA BREAKPOINT
 
     footer .home-link,
     .portfolio-link,
+    .projects-section,
     .contact-link {
         display: block;
     }
@@ -241,7 +261,7 @@ DESKTOP MEDIA BREAKPOINT
 @media(min-width: 1024px){
     
     body {
-        background-color: #fafafa;
+        background-color: #e4fef7;
         padding: 15px;
     }
 
@@ -290,6 +310,16 @@ DESKTOP MEDIA BREAKPOINT
     .portfolio-section {
         width: 95%;
         padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .projects-section {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .projects-section article {
+        width: 50%;
     }
     
     .contact-section {
