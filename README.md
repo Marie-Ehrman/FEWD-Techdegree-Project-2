@@ -1,5 +1,6 @@
 # FEWD-Techdegree-Project-2
-Responsive Layout [Live Link](https://marie-ehrman.github.io/FEWD-Techdegree-Project-2/)
+Responsive Layout 
+[Live Link](https://marie-ehrman.github.io/FEWD-Techdegree-Project-2/)
 
 ### Mobile 767px and less
 Test Mobile view at 320px
