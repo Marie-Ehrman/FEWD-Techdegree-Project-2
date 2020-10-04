@@ -133,7 +133,7 @@ MOBILE FIRST
 
     footer .home-link,
             .portfolio-link,
-            .projects-section,
+            .projects-link,
             .contact-link {
         display: none;
     }
@@ -242,7 +242,7 @@ TABLET MEDIA BREAKPOINT
 
     footer .home-link,
     .portfolio-link,
-    .projects-section,
+    .projects-link,
     .contact-link {
         display: block;
     }
